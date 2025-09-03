@@ -2,7 +2,7 @@
 includ Learn-Python,Algorithm-Solutions,Mini-projects etc.
 My-GitHub/
 
-    ├── Learning-Python/      # Python专项学习
+    ├── Learning-c++/      # c++专项学习
     
     │   ├── README.md         # 学习目标和大纲
     
