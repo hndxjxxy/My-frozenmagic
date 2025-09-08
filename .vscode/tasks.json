@@ -1,0 +1,28 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C/C++: g++ build active file",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g", // 生成调试信息，这是调试的关键！
+                "${file}", // 当前活动的源文件
+                "-o", // 指定输出文件
+                "${fileDirname}/${fileBasenameNoExtension}" // 输出到当前目录，文件名不带扩展名
+                // 你可以添加其他编译标志，例如：
+                // "-Wall", // 开启所有警告
+                // "-std=c++17", // 使用 C++17 标准
+            ],
+            "group": "build",
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                "reveal": "silent"
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

@@ -8,7 +8,7 @@ int main()
     cout << "hello world!" << endl;
     system("pause");
     return 0;
-} // namespace name
+}  namespace name
 
 
 //1.1 注释//
