@@ -88,7 +88,7 @@ int test04()
 int max(int a,int b){
     return a>b? a:b;
 }
-//一般main函数放在最后，否则会报错，但是可以提前告诉main函数的存在
+//一般main函数放在最后，否则会报错，但是可以提前告诉main其他函数的存在
 //声明可以多次，定义只能有1次
 /*eg：
 int max(int a, int b);
